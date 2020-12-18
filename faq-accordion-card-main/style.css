@@ -36,7 +36,7 @@ body{
 }
 .card{
   width: 60vw;
-  height: 60vh;
+  height: 70vh;
   padding: 1em;
   background-color: white;
   border-radius: 1.25rem;
@@ -45,7 +45,6 @@ body{
 }
 
 .card_content{
-  height: 100%;
   margin: auto;
   margin-top: 5%;
   display: grid;
@@ -55,17 +54,18 @@ body{
 
   
 }
+/* imagen */
 .card_content_img{
   background-image: url(/images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 85%;
   background-position: -10px -20px;
   margin-left:-50px ;
   position: relative;
 
 }
 .card_content_img #girl{
-  width: 80%;
+  width: 85%;
   margin-left: -10px;
 }
 #box{
@@ -75,5 +75,44 @@ body{
   z-index: 2;
   top: 42vh;
   left: 13vw;
-  
 }
+/* questions */
+.questions{
+  display: grid;
+  padding-right: 40px;
+  color: var(--VeryDarkBlueNeutral);
+}
+.questions h1{
+  font-size: 2.5em;
+}
+.question{
+  padding: 5px 0 5px 0;
+  cursor: pointer;
+
+}
+.question p{
+  display: none;
+  font-size: 1em;
+  color: var(--DarkGrayishBlueNeutral);
+}
+.question .unactive{
+  display: none;
+}
+.question .active{
+  
+  display: inline;
+}
+.question_title{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0 7px 0;
+}
+.question_title h2{
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+i{
+  color: var(--SoftRed);
+}
+
