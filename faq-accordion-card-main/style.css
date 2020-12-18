@@ -50,9 +50,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   column-gap: 20px;
-  
 
-  
 }
 /* imagen */
 .card_content_img{
@@ -61,7 +59,7 @@ body{
   background-size: 85%;
   background-position: -10px -20px;
   margin-left:-50px ;
-  position: relative;
+  height: 70vh;
 
 }
 .card_content_img #girl{
@@ -81,13 +79,15 @@ body{
   display: grid;
   padding-right: 40px;
   color: var(--VeryDarkBlueNeutral);
+  height: 80%;
+  gap: 10px;
 }
 .questions h1{
   font-size: 2.5em;
 }
 .question{
-  padding: 5px 0 5px 0;
   cursor: pointer;
+  border-bottom: 1px solid var(--LightBlueNutral);
 
 }
 .question p{
@@ -95,13 +95,7 @@ body{
   font-size: 1em;
   color: var(--DarkGrayishBlueNeutral);
 }
-.question .unactive{
-  display: none;
-}
-.question .active{
-  
-  display: inline;
-}
+
 .question_title{
   display: flex;
   justify-content: space-between;
@@ -111,8 +105,22 @@ body{
   font-size: 1.1em;
   font-weight: 400;
 }
+.question_title h2:hover{
+  color: var(--SoftRed);
+}
 
 i{
   color: var(--SoftRed);
 }
 
+/* special classes */
+.question .unactive{
+  display: none;
+}
+.question p.active{
+  display: inline;
+}
+.question .question_title h2.active {
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+}
