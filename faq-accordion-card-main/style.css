@@ -94,6 +94,7 @@ body{
   display: none;
   font-size: 1em;
   color: var(--DarkGrayishBlueNeutral);
+  transition: 800ms ease;
 }
 
 .question_title{
@@ -123,4 +124,37 @@ i{
 .question .question_title h2.active {
   font-weight: 700;
   color: var(--VeryDarkBlue);
+}
+
+@media only screen and (max-width:600px){
+  .card{
+    overflow: visible;
+    height: 75vh;
+    margin-top: 60px;
+    position: relative;
+  }
+  .card_content{
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+  }
+
+  .card_content_img{
+    background-size: 45%;
+    background-position: center;
+    margin-left:0px ;
+    align-self: center;
+    height: 70vh;
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+  }
+  .card_content_img #girl{
+    width: 45%;
+    
+
+  }
 }
