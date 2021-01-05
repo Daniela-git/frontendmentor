@@ -82,9 +82,8 @@ body{
 }
 /* questions */
 .questions{
-  /* margin-top: 30px; */
   display: grid;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   color: var(--VeryDarkBlueNeutral);
   height: 80%;
   gap: 10px;
@@ -114,6 +113,7 @@ body{
 .question .title h2{
   font-size: 1.1em;
   font-weight: 400;
+  cursor: pointer;
 }
 .question .title h2:hover{
   color: var(--SoftRed);
