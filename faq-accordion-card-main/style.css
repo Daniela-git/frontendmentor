@@ -28,11 +28,12 @@ body{
 }
 
 .container{
-  width:70vw;
+  width:60vw;
   height: 100vh;
   display: grid;
   place-items:center;
   margin: auto;
+  position: relative;
 }
 .card{
   width: 60vw;
@@ -56,6 +57,7 @@ body{
 .card_content_img{
   background-image: url(/images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
+  object-fit: cover;
   background-size: 85%;
   background-position: -10px -20px;
   margin-left:-50px ;
@@ -68,11 +70,9 @@ body{
 }
 #box{
   position: absolute;
-  width: 150px;
-  margin: auto;
+  width: 9.375rem;
   z-index: 2;
-  top: 42vh;
-  left: 13vw;
+  left: -4rem;
 }
 /* questions */
 .questions{
