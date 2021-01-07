@@ -119,7 +119,7 @@ body {
 /* smaller screen */
 @media only screen and (max-width: 768px) {
 	body {
-		background-image: url(/images/bg-pattern-top-mobile.svg);
+		background-image: url(./images/bg-pattern-top-mobile.svg);
 		background-position: top left;
 		background-repeat: no-repeat;
 		object-fit: cover;
@@ -205,8 +205,8 @@ body {
 /* large screen */
 @media only screen and (min-width: 901px) {
 	body {
-		background-image: url(/images/bg-pattern-bottom-desktop.svg),
-			url(/images/bg-pattern-top-desktop.svg);
+		background-image: url(./images/bg-pattern-bottom-desktop.svg),
+			url(./images/bg-pattern-top-desktop.svg);
 		background-repeat: no-repeat, no-repeat;
 		background-position: bottom right, top left;
 	}
