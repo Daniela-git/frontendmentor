@@ -22,4 +22,30 @@ body{
   background-image: url(/images/bg-pattern-bottom-desktop.svg),url(/images/bg-pattern-top-desktop.svg);
   background-repeat: no-repeat,no-repeat;
   background-position: bottom right, top left;
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80vw;
+  margin: auto;
+  margin-top: 5rem;
+}
+.text{
+  width: 75%;
+}
+.text__title{
+  color: var(--primary-magenta);
+  font-size: 3.5rem;
+  white-space: 0;
+}
+.text__description{
+  color:var(--neutral-magenta);
+}
+
+.proof{
+  grid-column: span 2;
+  
 }
