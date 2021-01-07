@@ -81,7 +81,7 @@ body {
 
 /* *********proofs********** */
 .proof {
-	margin-top: 3rem;
+	margin-top: 5rem;
 	grid-column: span 2;
 	display: grid;
 	gap: 1.5rem;
@@ -94,7 +94,8 @@ body {
 	padding: 2rem;
 	display: grid;
 	grid-template-columns: auto 1fr;
-	align-items: center;
+  align-items: center;
+  height: 250px;
 }
 .proof__img {
 	border-radius: 50%;
@@ -119,9 +120,9 @@ body {
   line-height: 1.5em;
 }
 
-/* .proof__article.a2{
+.proof__article.a2{
   margin-top: 5%;
 }
 .proof__article.a3{
   margin-top: 10%;
-} */
+}
