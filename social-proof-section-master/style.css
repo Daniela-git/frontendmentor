@@ -25,6 +25,7 @@ body{
   display: grid;
   place-items: center;
   overflow-x: hidden;
+  gap: 1rem;
 }
 .container{
   display: grid;
@@ -33,6 +34,7 @@ body{
   margin: auto;
   margin-top: 5rem;
 }
+/* **********Text*********** */
 .text{
   width: 75%;
 }
@@ -40,12 +42,38 @@ body{
   color: var(--primary-magenta);
   font-size: 3.5rem;
   white-space: 0;
+  margin-bottom: 20px;
 }
 .text__description{
   color:var(--neutral-magenta);
 }
 
-.proof{
-  grid-column: span 2;
+/* ********rated************ */
+.rated{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.rated__article{
+  width: 80%;
+  height: 25%;
+  background-color: var(--neutral-light);
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   
+}
+.rated__text{
+  font-size: 1rem;
+  color:var(--primary-magenta)
+}
+
+.proof{
+  margin-top: 3rem;
+
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
