@@ -56,14 +56,20 @@ body{
 }
 .rated__article{
   width: 80%;
-  height: 25%;
+  height: 28%;
   background-color: var(--neutral-light);
   border-radius: 6px;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   
+}
+.rated__article.a2{
+  margin-left: 10%;
+}
+.rated__article.a3{
+  margin-left: 20%;
 }
 .rated__text{
   font-size: 1rem;
