@@ -1,9 +1,12 @@
 const share = document.querySelector(".user__share");
-const social = document.querySelector(".social");
+const socialDesk = document.querySelector(".social-desktop");
 share.addEventListener("click", showSocial);
 
 function showSocial(e) {
-	console.log("social");
-	social.classList.toggle("none");
-	share.classList.toggle("clic");
+	if (window.innerWidth > 576) {
+		socialDesk.classList.toggle("show");
+		share.classList.toggle("clic");
+	} else {
+		console.log("mostrar social mobil");
+	}
 }

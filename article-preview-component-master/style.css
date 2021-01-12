@@ -18,20 +18,21 @@
 }
 body {
 	background-color: var(--LightGrayishBlue);
+	width: 100vw;
+	height: 100vh;
 }
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
-	height: 100vh;
+	/* width: 100vw; */
+	height: 100%;
 }
 .content {
 	width: 56.5385rem;
 	height: 22.0769rem;
 	display: grid;
 	grid-template-columns: 22.1538rem 1fr;
-	color: black;
 	background-color: white;
 	border-radius: var(--radius);
 	box-shadow: 3px 3px 20px var(--GrayishBlue);
@@ -90,7 +91,6 @@ body {
 	transition: all 0.4s ease-in-out;
 }
 .clic.user__share {
-	/* cambiar color al gris mas oscuro y la flecha al mas claro */
 	background-color: var(--VeryDarkGrayishBlue);
 }
 .clic.user__share svg path {
@@ -98,7 +98,14 @@ body {
 }
 
 /* social */
-.social {
+
+.social__title {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.social-desktop {
 	width: 18.8462rem;
 	height: 4.2308rem;
 	padding: 18px 38px;
@@ -111,9 +118,10 @@ body {
 	position: absolute;
 	right: -4.2308rem;
 	top: 50%;
+	opacity: 0;
 	transition: all 0.5s ease-in-out;
 }
-.social::after {
+.social-desktop::after {
 	content: "";
 	/* border-top: 14px solid blue; */
 	border-top: 14px solid var(--VeryDarkGrayishBlue);
@@ -124,12 +132,66 @@ body {
 	bottom: -1.9231rem;
 	left: 8.2308rem;
 }
-.social__title {
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 1rem;
-	font-weight: 500;
+.show {
+	opacity: 1;
 }
-.none {
-	opacity: 0;
+@media (max-width: 576px) {
+	body {
+		font-size: 11px;
+	}
+
+	.content {
+		width: 25.2308rem;
+		height: 38.8462rem;
+		grid-template-columns: 100%;
+		grid-template-rows: 15.3846rem 1fr;
+	}
+	.img {
+		width: 25.2308rem;
+		height: 15.3846rem;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: var(--radius);
+	}
+
+	.info {
+		padding: 34px 2.3846rem;
+		padding-bottom: 19px;
+		position: relative;
+	}
+
+	.user {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: 1fr 190px 1fr;
+		align-items: center;
+		column-gap: 4px;
+		width: 100%;
+	}
+	.none {
+		display: none;
+	}
+	.social-desktop {
+		display: none;
+	}
+	.social-mobil {
+		width: 25.2308rem;
+		height: 4.2308rem;
+		padding: 18px 38px;
+		color: var(--GrayishBlue);
+		background-color: var(--VeryDarkGrayishBlue);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom-right-radius: var(--radius);
+		border-bottom-left-radius: var(--radius);
+		/* opacity: 0; */
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		transition: opacity 0.5s ease-in-out;
+	}
+}
+
+@media (min-width: 577px) {
 }
