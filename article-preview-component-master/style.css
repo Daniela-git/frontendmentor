@@ -135,6 +135,8 @@ body {
 .show {
 	opacity: 1;
 }
+
+/* mobil */
 @media (max-width: 576px) {
 	body {
 		font-size: 11px;
@@ -162,34 +164,52 @@ body {
 	.user {
 		margin-top: 2rem;
 		display: grid;
-		grid-template-columns: 1fr 190px 1fr;
+		grid-template-columns: 1fr 14.6154rem 1fr;
+		grid-template-areas: "social social share";
 		align-items: center;
-		column-gap: 4px;
-		width: 100%;
 	}
-	.none {
-		display: none;
-	}
+
 	.social-desktop {
 		display: none;
 	}
-	.social-mobil {
+	.user__info {
+		margin-left: 4px;
+	}
+
+	.user.social-mobile {
 		width: 25.2308rem;
 		height: 4.2308rem;
-		padding: 18px 38px;
-		color: var(--GrayishBlue);
 		background-color: var(--VeryDarkGrayishBlue);
+		grid-template-columns: 2fr 1fr;
+		place-items: center;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding-left: 2.3846rem;
+	}
+	.user__share {
+		grid-area: "share";
+	}
+	.social__mobil {
+		grid-area: "social";
+		width: 100%;
+		color: var(--GrayishBlue);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		border-bottom-right-radius: var(--radius);
 		border-bottom-left-radius: var(--radius);
-		/* opacity: 0; */
-		position: absolute;
-		left: 0;
-		bottom: 0;
-
-		transition: opacity 0.5s ease-in-out;
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: all 0.5s ease-in-out;
+	}
+	.clic.user__share {
+		background-color: var(--DesaturatedDarkBlue);
+	}
+	.none {
+		display: none;
+		opacity: 0;
+		transform: translate(-50%, -50%);
 	}
 }
 
