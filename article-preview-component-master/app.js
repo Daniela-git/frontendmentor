@@ -11,7 +11,7 @@ share.addEventListener("click", showSocial);
 
 //functions
 function showSocial(e) {
-	if (window.innerWidth > 576) {
+	if (window.innerWidth > 778) {
 		socialDesk.classList.toggle("show");
 		share.classList.toggle("clic");
 	} else {
