@@ -33,4 +33,25 @@ body {
 	width: 80%;
 	display: flex;
 	align-items: center;
+	position: relative;
+}
+.testimonial {
+	/* margin-left: 2rem; */
+}
+.testimonial__text {
+	font-weight: 300;
+	color: var(--DarkBlue);
+	line-height: 1.2;
+}
+.testimonial__foot {
+	margin-top: 1rem;
+	font-size: 0.6rem;
+}
+.testimonial__foot span {
+	color: var(--GrayishBlue);
+	font-weight: 500;
+}
+
+.img {
+	border-radius: 6px;
 }
