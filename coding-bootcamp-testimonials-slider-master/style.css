@@ -26,22 +26,25 @@ body {
 	justify-content: center;
 	background: url("./images/pattern-bg.svg"), url("./images/pattern-curve.svg");
 	background-repeat: no-repeat, no-repeat;
-	background-position: center right, bottom left;
+	background-position: 80%, bottom left;
 }
 
 .content {
 	width: 80%;
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	align-items: center;
 	position: relative;
 }
 .testimonial {
 	/* margin-left: 2rem; */
+	z-index: 10;
 }
 .testimonial__text {
 	font-weight: 300;
 	color: var(--DarkBlue);
 	line-height: 1.2;
+	width: 20.3438rem;
 }
 .testimonial__foot {
 	margin-top: 1rem;
@@ -54,4 +57,7 @@ body {
 
 .img {
 	border-radius: 6px;
+	position: absolute;
+	right: 4rem;
+	box-shadow: 3px 3px 10px var(--DarkBlue);
 }
