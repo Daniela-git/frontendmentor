@@ -31,13 +31,16 @@ body {
 
 .content {
 	width: 80%;
+	height: 70%;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	align-items: center;
 	position: relative;
+	background: url("./images/pattern-quotes.svg");
+	background-repeat: no-repeat;
+	background-position: 10% 15%;
 }
 .testimonial {
-	/* margin-left: 2rem; */
 	z-index: 10;
 }
 .testimonial__text {
