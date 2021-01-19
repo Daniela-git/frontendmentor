@@ -54,6 +54,7 @@ body {
 	font-size: 0.6rem;
 }
 .testimonial__foot span {
+	margin-left: 0.3125rem;
 	color: var(--GrayishBlue);
 	font-weight: 500;
 }
@@ -68,7 +69,6 @@ body {
 	border-radius: 6px;
 	position: absolute;
 	right: 4rem;
-	/* box-shadow: 3px 3px 10px var(--DarkBlue); */
 }
 
 .slider {
@@ -86,4 +86,8 @@ body {
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
+}
+
+.slider img {
+	cursor: pointer;
 }
